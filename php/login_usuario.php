@@ -6,6 +6,9 @@ include 'conexion.php';
 
 $_usuario_ = $_POST['_Usuario_'];
 $_password_ = $_POST['_Password_'];
+//Quitar la encriptacion
+$_password_ = hash('sha512',$_password_);
+
 
 $validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario= '$_usuario_'
                                     and passwor='$_password_'");
