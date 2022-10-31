@@ -33,15 +33,15 @@
     </div>
 
     <div class="form-container sign-in-container">
-      <form action="#">
+      <form action="php/login_usuario.php" method="POST">
         <h1>Iniciar Sesión</h1>
         <div class="social-container">
           <a href="https://www.facebook.com/leonardo.moralescaballero.7/" target="_blank" class="social"><i
               class="fab fa-facebook-f"></i></a>
           <a href="https://twitter.com/YullGore" target="_blank" class="social"><i class="fab fa-twitter"></i></a>
         </div>
-        <input type="text" placeholder="Usuario" id="TxtUsuario" />
-        <input type="password" placeholder="Password" id="TxtPassword" />
+        <input type="text" placeholder="Usuario" id="TxtUsuario" name="_Usuario_"/>
+        <input type="password" placeholder="Password" id="TxtPassword" name="_Password_"/>
         <a href="https://www.google.com">¿Olvidaste tu contraseña?</a>
         <button>Iniciar Sesión</button>
       </form>
